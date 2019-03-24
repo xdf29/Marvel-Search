@@ -2,9 +2,11 @@
   "name": "marvel_search",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://xdf29.github.io/Marvel-Search",
   "dependencies": {
     "animate.css": "^3.7.0",
     "bootstrap": "^4.3.1",
+    "gh-pages": "^2.0.1",
     "md5": "^2.2.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
@@ -14,6 +16,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
